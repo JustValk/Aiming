@@ -86,7 +86,7 @@ local Aiming = {
         Instance = nil,
         Part = nil,
         Position = nil,
-        Velocity = nil, -- // You might need set the Y velocity to `0` or it bugs out /shrug
+        Velocity = 0, -- // You might need set the Y velocity to `0` or it bugs out /shrug
         OnScreen = false
     }
 }
