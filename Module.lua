@@ -42,13 +42,13 @@ local AimingSettings = {
     Enabled = true,
     VisibleCheck = true,
     HitChance = 100,
-    TargetPart = {"Head", "HumanoidRootPart"},
+    TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso", "RightUpperLeg"},
     RaycastIgnore = nil,
     Offset = Vector2new(),
 
     FOVSettings = {
         Circle = Drawingnew("Circle"),
-        Enabled = true,
+        Enabled = false,
         Scale = 16,
         Sides = 25,
         Colour = Color3fromRGB(255, 255, 255)
@@ -56,7 +56,7 @@ local AimingSettings = {
 
     TracerSettings = {
         Tracer = Drawingnew("Line"),
-        Enabled = true,
+        Enabled = false,
         Colour = Color3fromRGB(255, 255, 255)
     },
 
