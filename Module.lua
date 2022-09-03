@@ -128,7 +128,7 @@ end
 -- // Create circle
 local circle = AimingSettings.FOVSettings.Circle
 circle.Transparency = 0.4
-circle.Thickness = 0.8
+circle.Thickness = 102
 circle.Color = AimingSettings.FOVSettings.Colour
 circle.Filled = false
 
