@@ -42,15 +42,15 @@ local AimingSettings = {
     Enabled = true,
     VisibleCheck = true,
     HitChance = 100,
-    TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso", "RightUpperLeg"},
+    TargetPart = {"Head", "HumanoidRootPart"},
     RaycastIgnore = nil,
     Offset = Vector2new(),
 
     FOVSettings = {
         Circle = Drawingnew("Circle"),
         Enabled = true,
-        Scale = 16,
-        Sides = 25,
+        Scale = 60,
+        Sides = 12,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
@@ -77,7 +77,7 @@ local AimingSettings = {
 }
 local Aiming = {
     Loaded = false,
-    ShowCredits = false,
+    ShowCredits = true,
     Settings = AimingSettings,
 
     Signals = SignalManager.new(),
