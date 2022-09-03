@@ -49,15 +49,15 @@ local AimingSettings = {
     FOVSettings = {
         Circle = Drawingnew("Circle"),
         Enabled = true,
-        Scale = 60,
-        Sides = 12,
-        Colour = Color3fromRGB(231, 84, 128)
+        Scale = 16,
+        Sides = 25,
+        Colour = Color3fromRGB(255, 255, 255)
     },
 
     TracerSettings = {
         Tracer = Drawingnew("Line"),
         Enabled = true,
-        Colour = Color3fromRGB(231, 84, 128)
+        Colour = Color3fromRGB(255, 255, 255)
     },
 
     Ignored = {
@@ -127,8 +127,8 @@ end
 
 -- // Create circle
 local circle = AimingSettings.FOVSettings.Circle
-circle.Transparency = 1
-circle.Thickness = 2
+circle.Transparency = 0.4
+circle.Thickness = 0.8
 circle.Color = AimingSettings.FOVSettings.Colour
 circle.Filled = false
 
