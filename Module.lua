@@ -42,21 +42,21 @@ local AimingSettings = {
     Enabled = true,
     VisibleCheck = true,
     HitChance = 100,
-    TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso", "RightUpperLeg"},
+    TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso"},
     RaycastIgnore = nil,
     Offset = Vector2new(),
 
     FOVSettings = {
         Circle = Drawingnew("Circle"),
-        Enabled = false,
-        Scale = 10,
-        Sides = 25,
+        Enabled = true,
+        Scale = 60,
+        Sides = 12,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
     TracerSettings = {
         Tracer = Drawingnew("Line"),
-        Enabled = false,
+        Enabled = true,
         Colour = Color3fromRGB(231, 84, 128)
     },
 
@@ -156,8 +156,8 @@ end
 
 -- // Create circle
 local circle = AimingSettings.FOVSettings.Circle
-circle.Transparency = 0.4
-circle.Thickness = 2
+circle.Transparency = 1
+circle.Thickness = 3.5
 circle.Color = AimingSettings.FOVSettings.Colour
 circle.Filled = false
 
@@ -564,7 +564,7 @@ do
     function Ignored.IsIgnoredPlayer(Player)
         -- // Friend check
         if (IgnoredSettings.IgnoreFriends and table.find(Friends, Player)) then
-            return false
+            return true
         end
 
         -- // Vars
