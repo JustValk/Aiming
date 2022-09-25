@@ -43,6 +43,7 @@ local AimingSettings = {
     VisibleCheck = true,
     HitChance = 100,
     TargetPart = {"Head", "HumanoidRootPart"},
+    Aiming.Settings.TargetPart = {"Head", "HumanoidRootPart", "RightHand"} 
     RaycastIgnore = nil,
     Offset = Vector2new(),
 
