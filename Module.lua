@@ -44,6 +44,7 @@ local AimingSettings = {
     HitChance = 100,
     TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso"},
     RaycastIgnore = nil,
+    Aiming.Settings.TargetPart = {"Head", "HumanoidRootPart", "LeftHand"}
     Offset = Vector2new(),
 
     FOVSettings = {
