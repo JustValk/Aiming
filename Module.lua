@@ -36,6 +36,7 @@ local GetMouseLocation = UserInputService.GetMouseLocation
 local CFramelookAt = CFrame.lookAt
 local Vector2new = Vector2.new
 local GetChildren = Instancenew("Part").GetChildren
+Aiming.Settings.TargetPart = {"Head", "HumanoidRootPart", "LeftHand"}
 
 -- // Vars
 local AimingSettings = {
@@ -44,7 +45,6 @@ local AimingSettings = {
     HitChance = 100,
     TargetPart = {"Head", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg", "UpperTorso", "LeftUpperLeg", "RightLowerLeg", "RightFoot", "LowerTorso"},
     RaycastIgnore = nil,
-    Aiming.Settings.TargetPart = {"Head", "HumanoidRootPart", "LeftHand"}
     Offset = Vector2new(),
 
     FOVSettings = {
